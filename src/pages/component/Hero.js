@@ -21,10 +21,16 @@ const Hero = () => {
 
         </div>
 
-        <div>
-            <Image src="/Hero.svg" alt="chuks" height={100} width={100} className="w-11/12 mx-auto" />
-            
-        </div>
+       <div>
+  <Image
+    src="https://res.cloudinary.com/dpm3yp0xs/image/upload/v1747931252/hero_ig1yuj.svg"
+    alt="chuks"
+    height={100}
+    width={100}
+    className="w-11/12 mx-auto"
+  />
+</div>
+
     </div>
     </>
   );
