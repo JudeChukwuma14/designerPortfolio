@@ -66,11 +66,11 @@ const Navbar = () => {
       ref={menuRef}
       className="bg-[#68412B] shadow-md py-2  xl:container mx-auto font-georgia xl:text-xl"
     >
-      <div className="flex justify-between items-center px-4">
+      <div className="flex items-center justify-between px-4">
         {/* Logo */}
         <button
           onClick={() => handleNavigation("/")}
-          className="text-xl font-bold ml-6 text-gray-800"
+          className="ml-6 text-xl font-bold text-gray-800"
         >
           <Image
             src="/logo.svg"
@@ -99,7 +99,7 @@ const Navbar = () => {
             <li key={idx}>
               <button
                 onClick={() => handleScroll(item.id)}
-                className="block py-2 px-4 transition hover:text-[#FFFFFF] text-[12px] lg:text-[14px] xl:text-[20px] font-cinzel"
+                className="block py-2 px-4 transition hover:text-[#FFFFFF] text-[12px] lg:text-[14px] xl:text-[20px] font-cinzel cursor-pointer"
               >
                 {item.name}
               </button>
@@ -109,7 +109,7 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Action Buttons */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden space-x-4 md:flex">
           <button
             onClick={() => handleNavigation("/services/Services")}
             className="text-[#333333] bg-[#9D7F62] py-3 px-6 transition hover:scale-105 text-[12px] lg:text-[16px] xl:text-[22px] font-georgia"
@@ -119,7 +119,7 @@ const Navbar = () => {
           {status !== "loading" && session && (
             <button
               onClick={() => signOut()}
-              className="text-white bg-red-500 py-3 px-6 transition hover:scale-105"
+              className="px-6 py-3 text-white transition bg-red-500 hover:scale-105"
             >
               Logout
             </button>
@@ -150,7 +150,7 @@ const Navbar = () => {
             {session && (
               <button
                 onClick={() => signOut()}
-                className="w-full mt-2 text-white bg-red-500 py-3 transition hover:scale-105"
+                className="w-full py-3 mt-2 text-white transition bg-red-500 hover:scale-105"
               >
                 Logout
               </button>
