@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
-
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 const Footer = () => {
   const socialMediaLinks = {
     facebook: "https://www.facebook.com/share/1CxP2im4ML",
@@ -54,39 +54,21 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/fb.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <Facebook size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/ig.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <Instagram size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/wa.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <FaWhatsapp size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.linkedin}
@@ -147,39 +129,21 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/fb.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <Facebook size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/ig.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <Instagram size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/wa.svg"
-                  alt="social icon"
-                  height={50}
-                  width={50}
-                  className="w-8 text-[#14170F]"
-                />
+                <FaWhatsapp size={30} className="w-8 text-[#14170F]" />
               </Link>
               <Link
                 href={socialMediaLinks.linkedin}
